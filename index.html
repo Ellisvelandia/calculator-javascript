@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <script src="app.js" defer></script>
+  <title>Calculator</title>
+</head>
+
+<body>
+  <div class="calcbody" onload="Init()">
+    <div class="display">
+      <div class="displaytxt2" id="equation"></div>
+      <div class="displaytxt" id="maindisplay">0</div>
+    </div>
+    <div class="mcmr">
+      <button class="db" disabled>MC</button>
+      <button class="db" disabled>MR</button>
+      <button class="mcbt">M+</button>
+      <button class="mcbt">M-</button>
+      <button class="mcbt">MS</button>
+      <button class="mcbt">Mv</button>
+    </div>
+    <div class="keys">
+      <button class="keybt">%</button>
+      <button class="keybt">CE</button>
+      <button class="keybt" onclick="Clear()">C</button>
+      <button class="keybt">del</button>
+
+      <button class="keybt">1/x</button>
+      <button class="keybt">x^2</button>
+      <button class="keybt">--</button>
+      <button class="keybt" onclick="Division()">/</button>
+
+      <button class="keybt" onclick="Keypressed(7)">7</button>
+      <button class="keybt" onclick="Keypressed(8)">8</button>
+      <button class="keybt" onclick="Keypressed(9)">9</button>
+      <button class="keybt" onclick="Multiplication()">X</button>
+
+      <button class="keybt" onclick="Keypressed(4)">4</button>
+      <button class="keybt" onclick="Keypressed(5)">5</button>
+      <button class="keybt" onclick="Keypressed(6)">6</button>
+      <button class="keybt" onclick="Substraction()">-</button>
+
+      <button class="keybt" onclick="Keypressed(1)">1</button>
+      <button class="keybt" onclick="Keypressed(2)">2</button>
+      <button class="keybt" onclick="Keypressed(3)">3</button>
+      <button class="keybt" onclick="Addition()">+</button>
+
+      <button class="keybt">+/-</button>
+      <button class="keybt" onclick="Keypressed(0)">0</button>
+      <button class="keybt">.</button>
+      <button class="keybt eq" onclick="Equalto()">=</button>
+    </div>
+  </div>
+</body>
+
+</html>
